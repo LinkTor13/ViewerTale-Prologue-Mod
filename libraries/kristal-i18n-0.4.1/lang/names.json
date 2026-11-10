@@ -1,0 +1,38 @@
+{
+    "frisk": {
+        "en": "Frisk",
+        "zh_hans": "Frisk"
+    },
+    "chara": {
+        "en": "Chara",
+        "zh_hans":"Chara"
+    },
+    "teyu": {
+        "en": "Teyu",
+        "zh_hans":"Teyu"
+    },
+    "kris": {
+        "en": "Kris",
+        "zh_hans": "Kris"
+    },
+    "susie": {
+        "en": "Susie",
+        "zh_hans": "Susie"
+    },
+    "ralsei": {
+        "en": "Ralsei",
+        "zh_hans": "Ralsei"
+    },
+    "noelle": {
+        "en": "Noelle",
+        "zh_hans": "Noëlle"
+    },
+    "starwalker": {
+        "en": "Starwalker",
+        "zh_hans": "Starwalker"
+    },
+    "froggit": {
+        "en": "Froggit",
+        "zh_hans": "Croapaud"
+    }
+}

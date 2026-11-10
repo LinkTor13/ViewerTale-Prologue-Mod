@@ -1,0 +1,28 @@
+{
+    "id": "kristalI18n",
+    "authors": ["Aik"],
+    "version": "0.4.1", // x-release-please-version
+    "engineVer": "v0.10.0",
+    "config": {
+        "defaultLanguage": "zh_hans",
+        "defaultNameLanguage": "zh_hans",
+        "languages": ["en", "zh_hans"],
+        "languageNames": {
+            "en": "English",
+            "zh_hans": "Français"
+        },
+        "languageToggleKey": "f7",
+        "cjkFixedTextSpacing": 4,
+        "cjkDialogueTextSpacing": 4,
+        "cjkDialogueYOffset": -1,
+        "cjkTypewriterSpeedMultiplier": 1,
+        "lowerAndUpper": {
+            "à": "À", "â": "Â", "ä": "Ä",
+            "é": "É", "è": "È", "ê": "Ê", "ë": "Ë",
+            "î": "Î", "ï": "Ï",
+            "ô": "Ô", "ö": "Ö",
+            "ù": "Ù", "û": "Û", "ü": "Ü",
+            "ç": "Ç"
+        }
+    }
+}
