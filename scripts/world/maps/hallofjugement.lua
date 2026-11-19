@@ -1,7 +1,7 @@
 return {
   version = "1.11",
   luaversion = "5.1",
-  tiledversion = "1.12.2",
+  tiledversion = "1.11.0",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 10,
-  nextobjectid = 103,
+  nextlayerid = 11,
+  nextobjectid = 105,
   properties = {
     ["light"] = true,
     ["name"] = "Test Map - hallofjugement"
@@ -181,7 +181,6 @@ return {
           width = 2080.51,
           height = 75,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -195,7 +194,6 @@ return {
           width = 104.75,
           height = 79,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -209,7 +207,6 @@ return {
           width = 23.6364,
           height = 325.03,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -223,7 +220,6 @@ return {
           width = 2502.73,
           height = 70.5455,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -237,7 +233,6 @@ return {
           width = 117.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -251,7 +246,6 @@ return {
           width = 117.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -265,7 +259,6 @@ return {
           width = 117.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -279,7 +272,6 @@ return {
           width = 117.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -293,7 +285,6 @@ return {
           width = 117.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -307,7 +298,6 @@ return {
           width = 106.177,
           height = 38.6818,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -321,7 +311,6 @@ return {
           width = 30.4194,
           height = 438.682,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -335,7 +324,6 @@ return {
           width = 121.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -349,7 +337,6 @@ return {
           width = 118.5,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -363,7 +350,6 @@ return {
           width = 119.333,
           height = 104.5,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -377,7 +363,19 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
-          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 104,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 320,
+          y = 320,
+          width = 40,
+          height = 40,
+          rotation = 0,
           visible = true,
           properties = {}
         }
@@ -407,7 +405,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -421,7 +418,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -435,7 +431,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -449,7 +444,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         }
@@ -479,7 +473,6 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -493,9 +486,9 @@ return {
           width = 80.25,
           height = 27,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {
+            ["facing"] = "left",
             ["map"] = "room2",
             ["marker"] = "sortie"
           }
@@ -510,7 +503,6 @@ return {
           width = 132.25,
           height = 27,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {
             ["map"] = "AsgoreCorridor",
@@ -527,7 +519,6 @@ return {
           width = 7136,
           height = 4192,
           rotation = 0,
-          opacity = 1,
           visible = false,
           properties = {
             ["color"] = "#ff000000"
@@ -543,12 +534,28 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {
             ["marker"] = "respawn",
             ["text1"] = "* Silence echoes in the darkness\nof this familiar-yet-different\nscenery.",
             ["text2"] = "* The power of avoiding copying\nofficial music shines within\nyou."
+          }
+        },
+        {
+          id = 103,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 399.833,
+          y = 181.667,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "screen",
+            ["text1"] = "* These [color:yellow]stairs[color:reset] are [color:yellow]Pissing[color:reset] me\noff...",
+            ["text2"] = "* I'm the original   [color:yellow]Starwalker[color:reset]"
           }
         }
       }
@@ -562,7 +569,7 @@ return {
       id = 8,
       name = "paralax",
       class = "",
-      visible = true,
+      visible = false,
       opacity = 1,
       offsetx = 0,
       offsety = -40,

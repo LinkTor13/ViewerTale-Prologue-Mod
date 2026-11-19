@@ -11,7 +11,7 @@ function character:init()
     self:setLightActor("frisk_lw")
 
     -- Display level (saved to the save file)
-    self.level = 1
+    self.level = 20
     -- Default title / class (saved to the save file)
     self.title = "Human\nBody contains a\nhuman SOUL."
 
@@ -60,30 +60,30 @@ function character:init()
     self.lw_armor_default = "undertale/bandage"
 
     -- Character color (for action box outline and hp bar)
-    self.color = { 170 / 255, 1, 0 }
+    self.color = { 1, 0, 0 }
     -- Damage color (for the number when attacking enemies) (defaults to the main color)
-    self.dmg_color = { 170 / 255, 1, 0 }
+    self.dmg_color = { 1, 0, 0 }
     -- Attack bar color (for the target bar used in attack mode) (defaults to the main color)
-    self.attack_bar_color = { 170 / 255, 1, 0 }
+    self.attack_bar_color = { 1, 0, 0 }
     -- Attack box color (for the attack area in attack mode) (defaults to darkened main color)
-    self.attack_box_color = { 85 / 255, 1, 0 }
+    self.attack_box_color = { 1, 0, 0 }
     -- X-Action color (for the color of X-Action menu items) (defaults to the main color)
-    self.xact_color = { 170 / 255, 1, 0 }
+    self.xact_color = { 1, 0, 0 }
 
     -- Light Battle Colors
-    self.light_color = COLORS.white
-    self.light_dmg_color = COLORS.red
-    self.light_miss_color = COLORS.silver
-    self.light_attack_color = { 1, 105 / 255, 105 / 255 }
-    self.light_multibolt_attack_color = COLORS.white
-    self.light_attack_bar_color = COLORS.white
-    self.light_xact_color = COLORS.white
+    self.light_color = { 1, 0, 0 }
+    self.light_dmg_color =  { 1, 0, 0 }
+    self.light_miss_color =  { 1, 0, 0 }
+    self.light_attack_color = { 1, 0, 0}
+    self.light_multibolt_attack_color =  { 1, 0, 0 }
+    self.light_attack_bar_color =  { 1, 0, 0 }
+    self.light_xact_color = { 1, 0, 0 }
 
     -- Dark Battle Colors in the light world
-    self.dmg_color_lw = { 1, 0.3, 0.3 }
-    self.attack_bar_color_lw = COLORS.white
-    self.attack_box_color_lw = COLORS.silver
-    self.xact_color_lw = COLORS.white
+    self.dmg_color_lw = { 1, 0, 0 }
+    self.attack_bar_color_lw =  { 1, 0, 0 }
+    self.attack_box_color_lw =  { 1, 0, 0 }
+    self.xact_color_lw =  { 1, 0, 0 }
 
 
     -- Head icon in the equip / power menu

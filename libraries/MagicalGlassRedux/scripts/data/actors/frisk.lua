@@ -14,7 +14,7 @@ function actor:init()
     self.hitbox = { 1, 17.5, 18, 12 }
 
     -- Color for this actor used in outline areas (optional, defaults to red)
-    self.color = { 0, 1, 0 }
+    self.color = { 1, 0, 0 }
 
     -- A table that defines where the Soul should be placed on this actor if they are a player.
     -- First value is x, second value is y.

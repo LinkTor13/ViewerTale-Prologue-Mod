@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="15">
+<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="17">
  <editorsettings>
   <export target="room2.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="facing" value="down"/>
+  <property name="light" type="bool" value="true"/>
   <property name="name" value="Test Map - Room 2"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/castle.tsx"/>
@@ -18,8 +20,8 @@
 0,0,0,0,10,11,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
 0,0,0,0,10,11,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
 0,0,0,0,10,11,11,11,11,11,11,11,11,11,11,11,11,11,12,0,
-7,7,7,7,11,11,11,11,11,11,11,11,11,11,11,11,11,11,0,0,
-15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,0,0,
+7,7,7,7,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
+15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
@@ -75,6 +77,13 @@
    <properties>
     <property name="map" value="hallofjugement"/>
     <property name="marker" value="entré"/>
+   </properties>
+  </object>
+  <object id="16" name="npc" x="610.667" y="68" width="40" height="40">
+   <properties>
+    <property name="actor" value="screen"/>
+    <property name="text1" value="[voice:gaster_1]* [color:green]ENTRY 666"/>
+    <property name="text2" value="[voice:gaster_7]* [color:red]The Anomaly [color:green]is growing ever larger; timelines are being assimilated one after another."/>
    </properties>
   </object>
  </objectgroup>

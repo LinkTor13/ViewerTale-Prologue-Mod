@@ -1,7 +1,7 @@
 return {
   version = "1.11",
   luaversion = "5.1",
-  tiledversion = "1.12.2",
+  tiledversion = "1.11.0",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -10,8 +10,10 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 15,
+  nextobjectid = 17,
   properties = {
+    ["facing"] = "down",
+    ["light"] = true,
     ["name"] = "Test Map - Room 2"
   },
   tilesets = {
@@ -24,8 +26,7 @@ return {
     {
       name = "Hall du Jugement",
       firstgid = 41,
-      filename = "../tilesets/Hall du Jugement.tsx",
-      exportfilename = "../tilesets/Hall du Jugement.lua"
+      filename = "../tilesets/Hall du Jugement.tsx"
     }
   },
   layers = {
@@ -55,8 +56,8 @@ return {
         0, 0, 0, 0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0,
         0, 0, 0, 0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0,
         0, 0, 0, 0, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 0,
-        7, 7, 7, 7, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 0, 0,
-        15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 0, 0,
+        7, 7, 7, 7, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11,
+        15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
       }
@@ -117,7 +118,6 @@ return {
           width = 40,
           height = 200,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -131,7 +131,6 @@ return {
           width = 803.5,
           height = 40,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -145,7 +144,6 @@ return {
           width = 40,
           height = 200.125,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -159,7 +157,6 @@ return {
           width = 600,
           height = 40,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -173,7 +170,6 @@ return {
           width = 120,
           height = 40,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         }
@@ -203,7 +199,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -217,7 +212,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -231,7 +225,6 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {}
         }
@@ -261,7 +254,6 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {
             ["actor"] = "dummy",
@@ -278,7 +270,6 @@ return {
           width = 40,
           height = 80,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {
             ["map"] = "room1",
@@ -295,11 +286,27 @@ return {
           width = 40,
           height = 80,
           rotation = 0,
-          opacity = 1,
           visible = true,
           properties = {
             ["map"] = "hallofjugement",
             ["marker"] = "entré"
+          }
+        },
+        {
+          id = 16,
+          name = "npc",
+          type = "",
+          shape = "rectangle",
+          x = 610.667,
+          y = 68,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "screen",
+            ["text1"] = "[voice:gaster_1]* [color:green]ENTRY 666",
+            ["text2"] = "[voice:gaster_7]* [color:red]The Anomaly [color:green]is growing ever larger; timelines are being assimilated one after another."
           }
         }
       }
