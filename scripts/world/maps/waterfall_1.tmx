@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="26" height="17" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="20">
+ <editorsettings>
+  <export target="waterfall_1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/Waterfall_1.tsx"/>
+ <layer id="9" name="Calque de Tuiles 3" width="26" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,233,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,327,0,0,0,0,0,0,0,251,252,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,
+187,187,187,187,5,5,5,257,0,0,0,0,0,0,0,0,55,56,56,109,56,56,56,111,56,56,
+187,256,256,256,256,256,256,257,0,0,0,0,0,0,0,0,55,56,56,56,58,56,56,308,56,56,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,0,131,131,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,56,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,56,56,56,56,56,56,56,56,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56,0,0,0,0,0,0,88,0
+</data>
+ </layer>
+ <layer id="1" name="Calque de Tuiles 1" width="26" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,177,178,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,195,196,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,177,178,0,213,214,0,0,0,0,0,0,0,0,0,0,0,
+20,20,20,20,20,20,20,309,0,0,195,196,0,231,232,234,19,20,20,20,20,20,20,20,20,20,
+20,20,20,20,20,20,20,309,0,0,213,214,0,249,250,0,19,20,20,20,20,20,20,20,20,20,
+326,326,326,326,326,326,326,327,0,0,231,232,0,267,268,0,37,38,38,38,38,38,38,38,38,38,
+256,256,256,256,256,256,256,257,0,0,249,250,0,0,0,0,55,56,56,56,91,56,56,56,93,56,
+256,256,256,256,256,256,256,257,0,233,267,268,0,0,0,0,55,56,56,56,91,56,56,56,56,56,
+274,115,116,274,274,274,274,275,0,251,252,0,0,0,0,0,55,56,56,56,109,56,56,111,56,56,
+5,5,5,5,5,5,5,6,0,0,0,0,0,7,8,8,8,8,8,8,8,8,8,8,8,8,
+127,127,127,127,127,127,127,33,227,223,223,227,223,36,128,146,146,128,146,128,128,128,128,128,128,128,
+127,145,127,127,145,145,127,15,222,226,222,222,222,18,146,128,128,128,128,146,128,146,146,128,146,128,
+41,41,41,41,41,41,41,42,0,312,0,312,0,43,44,44,44,44,44,44,44,44,44,44,44,44,
+256,256,256,256,256,256,256,257,0,84,0,84,0,55,56,56,56,56,56,56,56,56,56,56,56,56,
+256,256,256,256,256,256,256,257,0,84,0,84,0,55,56,56,56,4,5,5,5,5,5,5,5,5,
+256,256,256,256,256,256,256,257,0,84,0,84,0,55,56,56,56,22,127,127,145,127,127,127,127,145
+</data>
+ </layer>
+ <layer id="2" name="Calque de Tuiles 2" width="26" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,20,20,20,20,20,20,20,20,20,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,307,20,20,20,20,20,20,20,20,20,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,0,0,0,0,0,0,0,
+256,256,256,256,256,256,256,257,0,0,0,0,0,0,0,0,0,0,0,0,0,56,56,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+127,145,145,127,145,145,145,0,0,0,0,0,0,0,146,146,128,146,128,128,146,128,128,146,128,149,
+145,145,127,127,145,127,145,0,0,0,0,0,0,0,128,128,149,128,146,128,128,146,146,146,146,146,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,94,0,0,0,97,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,95,0,0,0,0,88,0
+</data>
+ </layer>
+ <layer id="10" name="Calque de Tuiles 4" width="26" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="1" name="pushblock" x="600" y="400" width="40" height="40">
+   <properties>
+    <property name="sprite" value="world/papy_block"/>
+   </properties>
+  </object>
+  <object id="2" name="tilebutton" x="720" y="400" width="40" height="40">
+   <properties>
+    <property name="blocks" type="bool" value="true"/>
+    <property name="flag" value="waterfall_1:papynigme_solve"/>
+    <property name="once" type="bool" value="true"/>
+    <property name="onsound" value="snd_switchpull_n"/>
+    <property name="pressedsprite" value="world/ut_pressed"/>
+    <property name="sprite" value="world/ut_button"/>
+   </properties>
+  </object>
+  <object id="4" name="forcefield" x="840" y="403.333" width="44" height="149.333">
+   <properties>
+    <property name="flag" value="!waterfall_1:papynigme_solve"/>
+    <property name="visible" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="5" name="npc" x="120" y="340" width="40" height="40">
+   <properties>
+    <property name="actor" value="screen"/>
+    <property name="text1" value="[voice:gaster_3]* [color:green]ENTRY 96"/>
+    <property name="text2" value="[voice:gaster_2]* [color:red]The Anomaly [color:green]seems to diminish our world—or rather, the Underground—and, worse still"/>
+    <property name="text3" value="[voice:gaster_4]* [color:green]many areas appear disconnected."/>
+    <property name="text4" value="[voice:gaster_2]* [color:green]from one another, such as the Ruins, the school in Hotland, or even the entirety of the Dunes."/>
+   </properties>
+  </object>
+  <object id="6" name="npc" x="920" y="340" width="40" height="40">
+   <properties>
+    <property name="actor" value="screen"/>
+    <property name="text1" value="[voice:gaster_1]* [color:green]ENTRY 16"/>
+    <property name="text2" value="[voice:gaster_3]* [color:green]Since I found myself here, I have been able to study our world from a new angle."/>
+    <property name="text3" value="[voice:gaster_1]* [color:green]The multitude of timelines reveals the possibilities that our world could have taken."/>
+    <property name="text4" value="[voice:gaster_4]* [color:green]I never would have thought I’d see the [color:white]Princess [color:green]be, at times, a Prince—or both, or neither."/>
+   </properties>
+  </object>
+  <object id="14" name="transition" x="1011.5" y="392.5" width="52.5" height="185.5">
+   <properties>
+    <property name="facing" value="right"/>
+    <property name="map" value="snowdin_1"/>
+    <property name="marker" value="enter"/>
+   </properties>
+  </object>
+  <object id="18" name="transition" x="0" y="385.333" width="10.6667" height="181.333">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="ruin_1"/>
+    <property name="marker" value="exit"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ffff" id="7" name="blockcollision" visible="0"/>
+ <objectgroup id="3" name="objects_party" visible="0"/>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="3" name="spawn" x="162" y="459">
+   <point/>
+  </object>
+  <object id="15" name="exit" x="988.5" y="479.5">
+   <point/>
+  </object>
+  <object id="17" name="entry" x="64" y="497.333">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="8" name="collision">
+  <object id="7" x="520" y="360" width="614" height="40"/>
+  <object id="8" x="520" y="550" width="606" height="40"/>
+  <object id="9" x="315" y="514.087" width="206" height="44.913"/>
+  <object id="10" x="320" y="399" width="199.875" height="40.7273"/>
+  <object id="11" x="-79.9375" y="559.636" width="397.875" height="40.7273"/>
+  <object id="12" x="-77.7557" y="359.182" width="397.875" height="40.7273"/>
+ </objectgroup>
+</map>

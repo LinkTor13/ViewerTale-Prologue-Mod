@@ -1,7 +1,7 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.11.0",
+  tiledversion = "1.12.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 5,
-  nextobjectid = 24,
+  nextobjectid = 25,
   properties = {
     ["light"] = true
   },
@@ -18,8 +18,7 @@ return {
     {
       name = "TrueLab",
       firstgid = 1,
-      filename = "TrueLab.tsx",
-      exportfilename = "../tilesets/TrueLab.lua"
+      filename = "../tilesets/TrueLab.tsx"
     },
     {
       name = "Hall du Jugement",
@@ -55,7 +54,7 @@ return {
         312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312, 312,
         1, 2, 2, 7, 2, 3, 3, 3, 5, 4, 7, 3, 3, 5, 2, 2, 2, 8, 9, 4, 6, 312, 312, 312, 312, 312, 312, 312, 312, 312,
         11, 12, 12, 17, 12, 13, 13, 13, 15, 14, 17, 13, 13, 15, 12, 12, 12, 18, 19, 14, 16, 312, 312, 312, 312, 312, 312, 312, 312, 312,
-        21, 22, 22, 27, 22, 23, 23, 23, 25, 24, 27, 23, 23, 25, 22, 22, 22, 28, 29, 24, 26, 312, 312, 312, 312, 312, 312, 312, 312, 312,
+        21, 22, 22, 25, 22, 23, 23, 23, 25, 24, 27, 23, 23, 25, 22, 22, 22, 28, 29, 24, 26, 312, 312, 312, 312, 312, 312, 312, 312, 312,
         37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 312, 312, 312, 312, 312, 312, 312, 312, 312,
         37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 312, 312, 312, 312, 312, 312, 312, 312, 312,
         37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 312, 312, 312, 312, 312, 312, 312, 312, 312,
@@ -92,6 +91,7 @@ return {
           width = 850.667,
           height = 50.6667,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -105,6 +105,7 @@ return {
           width = 688.125,
           height = 50.6667,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -118,6 +119,7 @@ return {
           width = 99.1582,
           height = 50.6667,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -131,6 +133,7 @@ return {
           width = 39.34,
           height = 222,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         }
@@ -160,6 +163,7 @@ return {
           width = 40,
           height = 119.25,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["solid"] = true,
@@ -176,6 +180,7 @@ return {
           width = 894.667,
           height = 301.333,
           rotation = 0,
+          opacity = 1,
           visible = false,
           properties = {}
         },
@@ -189,6 +194,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["actor"] = "screen",
@@ -206,6 +212,7 @@ return {
           width = 73.2727,
           height = 6,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["map"] = "ruin_1",
@@ -222,6 +229,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["actor"] = "screen",
@@ -255,6 +263,7 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -268,6 +277,7 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         }

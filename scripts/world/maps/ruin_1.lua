@@ -1,7 +1,7 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.11.0",
+  tiledversion = "1.12.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 31,
+  nextobjectid = 42,
   properties = {
     ["light"] = true
   },
@@ -18,7 +18,7 @@ return {
     {
       name = "Ruine",
       firstgid = 1,
-      filename = "Ruine.tsx",
+      filename = "../tilesets/Ruine.tsx",
       exportfilename = "../tilesets/Ruine.lua"
     }
   },
@@ -50,7 +50,7 @@ return {
         208, 1, 17, 209, 217, 201, 226, 209, 209, 209, 209, 209, 202, 206, 207,
         208, 1, 209, 209, 201, 201, 209, 209, 209, 209, 209, 209, 209, 206, 207,
         208, 1, 209, 209, 201, 201, 209, 209, 209, 209, 209, 209, 209, 206, 197,
-        208, 1, 209, 209, 225, 201, 218, 209, 209, 209, 209, 209, 209, 206, 197,
+        208, 1, 209, 209, 225, 201, 26, 209, 209, 209, 209, 209, 209, 206, 197,
         183, 183, 209, 209, 209, 225, 201, 218, 209, 209, 209, 209, 209, 197, 197,
         183, 183, 183, 183, 209, 209, 201, 201, 209, 209, 209, 209, 183, 197, 197,
         183, 183, 183, 183, 183, 183, 201, 201, 197, 197, 197, 197, 197, 197, 197
@@ -116,8 +116,8 @@ return {
         0, 0, 0, 0, 65, 0, 74, 0, 0, 257, 0, 163, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 0, 0, 2684354561, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 0, 0, 2684354561, 0, 0,
-        0, 0, 0, 0, 73, 0, 66, 0, 0, 225, 0, 0, 2684354561, 0, 0,
-        0, 0, 0, 0, 0, 73, 0, 66, 0, 260, 0, 155, 164, 0, 0,
+        0, 0, 0, 0, 73, 0, 243, 0, 0, 225, 0, 0, 2684354561, 0, 0,
+        0, 0, 0, 0, 0, 250, 0, 66, 0, 260, 0, 155, 164, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 155, 164, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
       }
@@ -146,6 +146,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["keepdown"] = true,
@@ -164,6 +165,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["keepdown"] = true,
@@ -182,6 +184,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["keepdown"] = true,
@@ -200,6 +203,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["keepdown"] = true,
@@ -218,7 +222,8 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
-          visible = false,
+          opacity = 1,
+          visible = true,
           properties = {
             ["keepdown"] = true,
             ["onsound"] = "snd_noise",
@@ -236,6 +241,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["keepdown"] = true,
@@ -249,16 +255,19 @@ return {
           name = "npc",
           type = "",
           shape = "rectangle",
-          x = 120.212,
-          y = 137.576,
+          x = 120,
+          y = 140,
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["actor"] = "screen",
-            ["text1"] = "[voice:gaster_3]* [color:green]ENTRY 6",
-            ["text2"] = "[voice:gaster_2]* [color:green]"
+            ["text1"] = "[voice:gaster_3]* [color:green]ENTRY 76",
+            ["text2"] = "[voice:gaster_2]* [color:red]The Anomaly [color:green]has shattered our world—its space and its time—forging false connections.",
+            ["text3"] = "[voice:gaster_1]* [color:green]between the fragments that have taken shape here.\n",
+            ["text4"] = "[voice:gaster_4]* [color:green]It mimics the normal behavior of an ordinary door...[wait:5]\n[voice:gaster_6][color:white]* [color:green]But to what end?"
           }
         },
         {
@@ -271,11 +280,12 @@ return {
           width = 603.063,
           height = 520,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
-            ["camera_center"] = "camera_center",
-            ["lockx"] = true,
-            ["locky"] = true
+            ["lockx"] = false,
+            ["locky"] = true,
+            ["marker"] = "camera_center"
           }
         },
         {
@@ -288,9 +298,28 @@ return {
           width = 85.7272,
           height = 44.25,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {
             ["map"] = "lab_1",
+            ["marker"] = "entry"
+          }
+        },
+        {
+          id = 40,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 183,
+          y = 151,
+          width = 123,
+          height = 28,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {
+            ["facing"] = "right",
+            ["map"] = "waterfall_1",
             ["marker"] = "entry"
           }
         }
@@ -320,6 +349,7 @@ return {
           width = 159.5,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -333,6 +363,7 @@ return {
           width = 43.5,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -343,9 +374,10 @@ return {
           shape = "rectangle",
           x = 480,
           y = 240,
-          width = 80,
+          width = 42,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -359,6 +391,7 @@ return {
           width = 160,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -367,11 +400,12 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = -22.6667,
+          x = 30.3333,
           y = 199.938,
-          width = 102.5,
+          width = 49.5,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -385,6 +419,7 @@ return {
           width = 102.5,
           height = 257,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -394,49 +429,11 @@ return {
           type = "",
           shape = "rectangle",
           x = 520.75,
-          y = 221.5,
-          width = 102.5,
-          height = 257,
+          y = 237.5,
+          width = 46.5,
+          height = 241,
           rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 17,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 578.66,
-          y = 343.015,
-          width = 102.5,
-          height = 257,
-          rotation = 45.468,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 18,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 6.46969,
-          y = 423.693,
-          width = 40,
-          height = 82.0517,
-          rotation = 315.959,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 19,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 91.3333,
-          y = 468.974,
-          width = 40,
-          height = 82.0517,
-          rotation = 315.959,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -450,6 +447,7 @@ return {
           width = 40,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -463,6 +461,7 @@ return {
           width = 100.545,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -476,7 +475,65 @@ return {
           width = 173.545,
           height = 40,
           rotation = 0,
+          opacity = 1,
           visible = true,
+          properties = {}
+        },
+        {
+          id = 35,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 444,
+          y = 483,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          polygon = {
+            { x = -5.66667, y = -1.33333 },
+            { x = 76.6667, y = -82.6667 },
+            { x = 78.6667, y = -2.66667 }
+          },
+          properties = {}
+        },
+        {
+          id = 36,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 160.182,
+          y = 480,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = -40, y = -38.9091 },
+            { x = -40.7879, y = 5.36364 }
+          },
+          properties = {}
+        },
+        {
+          id = 37,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 40,
+          y = 400.25,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = 40.5, y = 40 },
+            { x = -2.5, y = 40.25 }
+          },
           properties = {}
         }
       }
@@ -520,6 +577,7 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -528,11 +586,12 @@ return {
           name = "camera_center",
           type = "",
           shape = "point",
-          x = 300,
-          y = 280,
+          x = 286.667,
+          y = 324,
           width = 0,
           height = 0,
           rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         },
@@ -546,6 +605,21 @@ return {
           width = 0,
           height = 0,
           rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "exit",
+          type = "",
+          shape = "point",
+          x = 235,
+          y = 216,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          opacity = 1,
           visible = true,
           properties = {}
         }

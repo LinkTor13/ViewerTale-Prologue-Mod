@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="15" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="31">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="15" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="42">
  <editorsettings>
   <export target="ruin_1.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="light" type="bool" value="true"/>
  </properties>
- <tileset firstgid="1" source="Ruine.tsx"/>
+ <tileset firstgid="1" source="../tilesets/Ruine.tsx"/>
  <layer id="1" name="Calque de Tuiles 1" width="15" height="13">
   <data encoding="csv">
 207,207,207,207,208,0,0,206,207,207,207,207,207,207,207,
@@ -18,7 +18,7 @@
 208,1,17,209,217,201,226,209,209,209,209,209,202,206,207,
 208,1,209,209,201,201,209,209,209,209,209,209,209,206,207,
 208,1,209,209,201,201,209,209,209,209,209,209,209,206,197,
-208,1,209,209,225,201,218,209,209,209,209,209,209,206,197,
+208,1,209,209,225,201,26,209,209,209,209,209,209,206,197,
 183,183,209,209,209,225,201,218,209,209,209,209,209,197,197,
 183,183,183,183,209,209,201,201,209,209,209,209,183,197,197,
 183,183,183,183,183,183,201,201,197,197,197,197,197,197,197
@@ -52,8 +52,8 @@
 0,0,0,0,65,0,74,0,0,257,0,163,0,0,0,
 0,0,0,0,0,0,0,0,0,225,0,0,2684354561,0,0,
 0,0,0,0,0,0,0,0,0,225,0,0,2684354561,0,0,
-0,0,0,0,73,0,66,0,0,225,0,0,2684354561,0,0,
-0,0,0,0,0,73,0,66,0,260,0,155,164,0,0,
+0,0,0,0,73,0,243,0,0,225,0,0,2684354561,0,0,
+0,0,0,0,0,250,0,66,0,260,0,155,164,0,0,
 0,0,0,0,0,0,0,0,0,0,155,164,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
@@ -91,7 +91,7 @@
     <property name="sprite" value="world/ut_button"/>
    </properties>
   </object>
-  <object id="6" name="tilebutton" x="360" y="280" width="40" height="40" visible="0">
+  <object id="6" name="tilebutton" x="360" y="280" width="40" height="40">
    <properties>
     <property name="keepdown" type="bool" value="true"/>
     <property name="onsound" value="snd_noise"/>
@@ -107,18 +107,22 @@
     <property name="sprite" value="world/ut_button"/>
    </properties>
   </object>
-  <object id="9" name="npc" x="120.212" y="137.576" width="40" height="40">
+  <object id="9" name="npc" x="120" y="140" width="40" height="40">
    <properties>
     <property name="actor" value="screen"/>
-    <property name="text1" value="[voice:gaster_3]* [color:green]ENTRY 6"/>
-    <property name="text2" value="[voice:gaster_2]* [color:green]"/>
+    <property name="text1" value="[voice:gaster_3]* [color:green]ENTRY 76"/>
+    <property name="text2" value="[voice:gaster_2]* [color:red]The Anomaly [color:green]has shattered our world—its space and its time—forging false connections."/>
+    <property name="text3">[voice:gaster_1]* [color:green]between the fragments that have taken shape here.
+</property>
+    <property name="text4">[voice:gaster_4]* [color:green]It mimics the normal behavior of an ordinary door...[wait:5]
+[voice:gaster_6][color:white]* [color:green]But to what end?</property>
    </properties>
   </object>
   <object id="25" name="cameratarget" x="-3" y="0" width="603.063" height="520">
    <properties>
-    <property name="camera_center" value="camera_center"/>
-    <property name="lockx" type="bool" value="true"/>
+    <property name="lockx" type="bool" value="false"/>
     <property name="locky" type="bool" value="true"/>
+    <property name="marker" value="camera_center"/>
    </properties>
   </object>
   <object id="29" name="transition" x="238.47" y="480.083" width="85.7272" height="44.25">
@@ -127,31 +131,47 @@
     <property name="marker" value="entry"/>
    </properties>
   </object>
+  <object id="40" name="transition" x="183" y="151" width="123" height="28">
+   <properties>
+    <property name="facing" value="right"/>
+    <property name="map" value="waterfall_1"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#0000ff" id="7" name="collision">
   <object id="10" x="280" y="160" width="159.5" height="40"/>
   <object id="11" x="440" y="200" width="43.5" height="40"/>
-  <object id="12" x="480" y="240" width="80" height="40"/>
+  <object id="12" x="480" y="240" width="42" height="40"/>
   <object id="13" x="40" y="160" width="160" height="40"/>
-  <object id="14" x="-22.6667" y="199.938" width="102.5" height="40"/>
+  <object id="14" x="30.3333" y="199.938" width="49.5" height="40"/>
   <object id="15" x="-62.4457" y="219.891" width="102.5" height="257"/>
-  <object id="16" x="520.75" y="221.5" width="102.5" height="257"/>
-  <object id="17" x="578.66" y="343.015" width="102.5" height="257" rotation="45.468"/>
-  <object id="18" x="6.46969" y="423.693" width="40" height="82.0517" rotation="315.959"/>
-  <object id="19" x="91.3333" y="468.974" width="40" height="82.0517" rotation="315.959"/>
+  <object id="16" x="520.75" y="237.5" width="46.5" height="241"/>
   <object id="20" x="80.3333" y="440.641" width="40" height="40"/>
   <object id="21" x="139.333" y="480.333" width="100.545" height="40"/>
   <object id="23" x="320.182" y="479.818" width="173.545" height="40"/>
+  <object id="35" x="444" y="483">
+   <polygon points="-5.66667,-1.33333 76.6667,-82.6667 78.6667,-2.66667"/>
+  </object>
+  <object id="36" x="160.182" y="480">
+   <polygon points="0,0 -40,-38.9091 -40.7879,5.36364"/>
+  </object>
+  <object id="37" x="40" y="400.25">
+   <polygon points="0,0 40.5,40 -2.5,40.25"/>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="objects_party"/>
  <objectgroup color="#7f00ff" id="5" name="markers">
   <object id="2" name="spawn" x="109" y="336">
    <point/>
   </object>
-  <object id="24" name="camera_center" x="300" y="280">
+  <object id="24" name="camera_center" x="286.667" y="324">
    <point/>
   </object>
   <object id="26" name="entry" x="280" y="480.333">
+   <point/>
+  </object>
+  <object id="41" name="exit" x="235" y="216">
    <point/>
   </object>
  </objectgroup>

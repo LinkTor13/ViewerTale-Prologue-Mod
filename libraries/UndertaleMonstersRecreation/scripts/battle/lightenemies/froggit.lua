@@ -26,7 +26,8 @@ function Froggit:init()
     -- List of possible wave ids, randomly picked each turn
     self.waves = {
         "froggit/leapfrog",
-        "froggit/flies"
+        "froggit/flies",
+        "froggit/sword_trackers_1"
     }
 
     -- Dialogue randomly displayed in the enemy's speech bubble

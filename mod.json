@@ -18,7 +18,7 @@
 
     // The map that you start in when first starting the project.
     "map": "ruin_1",
-
+    
     // The party. The first character is the player.
     "party": ["frisk"],
 
@@ -27,6 +27,7 @@
         "items": ["undertale/real_knife"],
         "key_items": ["cell_phone"]
     },
+    
     // Should never be true, but just in case. Restarts the entire engine when leaving the project.
     // If you need this, you're most likely doing something wrong.
     "hardReset": false,
